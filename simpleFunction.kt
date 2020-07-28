@@ -25,3 +25,9 @@ var sumFun = fun (a: Int,b: Int): Int {
     return a+b
     //anonymous function no need function name
 }
+var lambda ={a:Int,b:Int -> a+b}
+fun lambFunc (func: (Int,Int)-> Int) {
+
+    var result = func(4,6)
+    println("lambda $result")
+}
